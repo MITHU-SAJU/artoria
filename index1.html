@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artoria • Spark Creativity with Mandalas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+
+<body>
+    <!-- FLOATING ELEMENTS -->
+    <div class="floating-container" id="floatingContainer"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="./assets/images/logo.png" alt="Artoria Logo" class="brand-logo">
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link px-4" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-4" href="#books">Books</a></li>
+                    <li class="nav-item"><a class="nav-link px-4" href="#kids-benefits">Benefits</a></li>
+                    <li class="nav-item"><a class="nav-link px-4" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link px-4" href="#connect">Connect</a></li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Links Slider (shows on small screens) -->
+    <div class="mobile-nav-slider d-lg-none" id="mobileNavSlider" aria-hidden="false">
+        <div class="mobile-links d-flex gap-3 px-3 align-items-center">
+            <a class="mobile-link" href="#home">Home</a>
+            <a class="mobile-link" href="#books">Books</a>
+            <a class="mobile-link" href="#kids-benefits">Benefits</a>
+            <a class="mobile-link" href="#about">About Us</a>
+            <a class="mobile-link" href="#connect">Connect</a>
+            <a class="mobile-link btn btn-sm btn-explore ms-2" href="#books">Shop</a>
+        </div>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero d-flex align-items-center " id="home">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <!-- Left Text -->
+                <div class="col-lg-6">
+                    <h1 class="mb-4">Spark Creativity.<br>Build Focus.<br>Have Fun!</h1>
+                    <p class="lead mb-5">Beautiful hand-drawn mandalas made for kids 6–14.<br>Hours of joyful coloring
+                        that actually helps them grow.</p>
+                    <a href="#books" class="btn btn-explore btn-lg d-inline-flex align-items-center gap-3">
+                        Explore Books
+                        <span style="font-size:1.6rem;">🖍️</span>
+                    </a>
+                </div>
+
+                <!-- Right Book Animation -->
+                <div class="col-lg-6">
+                    <div class="book-container">
+                        <div class="book">
+                            <!-- LEFT PAGE - VOL 1 -->
+                            <div class="page page-left">
+                                <div class="page-content mt-5">
+                                    <div class="page-title">Vol. 1</div>
+                                    <svg id="mandala1" width="270" height="270" viewBox="0 0 320 320"
+                                        class="mandala-svg" xmlns="http://www.w3.org/2000/svg">
+                                        <!-- Concentric circles -->
+                                        <circle class="draw-element" cx="160" cy="160" r="145" fill="none"
+                                            stroke="#2C3E50" stroke-width="14" />
+                                        <circle class="draw-element" cx="160" cy="160" r="118" fill="none"
+                                            stroke="#2C3E50" stroke-width="9" />
+                                        <circle class="draw-element" cx="160" cy="160" r="88" fill="none"
+                                            stroke="#2C3E50" stroke-width="11" />
+                                        <circle class="draw-element" cx="160" cy="160" r="62" fill="none"
+                                            stroke="#2C3E50" stroke-width="6" />
+                                        <!-- Center -->
+                                        <circle cx="160" cy="160" r="19" fill="#FFDB5E" />
+
+                                        <!-- Radial lines (8) -->
+                                        <line class="draw-element" x1="160" y1="160" x2="160" y2="25" stroke="#2C3E50"
+                                            stroke-width="8" stroke-linecap="round" />
+                                        <line class="draw-element" x1="160" y1="160" x2="255" y2="65" stroke="#2C3E50"
+                                            stroke-width="8" stroke-linecap="round" />
+                                        <line class="draw-element" x1="160" y1="160" x2="275" y2="160" stroke="#2C3E50"
+                                            stroke-width="8" stroke-linecap="round" />
+                                        <line class="draw-element" x1="160" y1="160" x2="255" y2="255" stroke="#2C3E50"
+                                            stroke-width="8" stroke-linecap="round" />
+                                        <line class="draw-element" x1="160" y1="160" x2="160" y2="295" stroke="#2C3E50"
+                                            stroke-width="8" stroke-linecap="round" />
+                                        <line class="draw-element" x1="160" y1="160" x2="65" y2="255" stroke="#2C3E50"
+                                            stroke-width="8" stroke-linecap="round" />
+                                        <line class="draw-element" x1="160" y1="160" x2="45" y2="160" stroke="#2C3E50"
+                                            stroke-width="8" stroke-linecap="round" />
+                                        <line class="draw-element" x1="160" y1="160" x2="65" y2="65" stroke="#2C3E50"
+                                            stroke-width="8" stroke-linecap="round" />
+
+                                        <!-- Petals -->
+                                        <!-- Petal 1 (top) -->
+                                        <g transform="rotate(0 160 160)">
+                                            <path class="petal-fill" d="M160,160 Q145,82 195,72 Q225,115 160,160 Z"
+                                                fill="#FF9EBE" opacity="0" />
+                                            <path class="draw-element" d="M160,160 Q145,82 195,72 Q225,115 160,160 Z"
+                                                fill="none" stroke="#2C3E50" stroke-width="6" />
+                                        </g>
+                                        <!-- Petal 2 -->
+                                        <g transform="rotate(45 160 160)">
+                                            <path class="petal-fill" d="M160,160 Q145,82 195,72 Q225,115 160,160 Z"
+                                                fill="#FFDB5E" opacity="0" />
+                                            <path class="draw-element" d="M160,160 Q145,82 195,72 Q225,115 160,160 Z"
+                                                fill="none" stroke="#2C3E50" stroke-width="6" />
+                                        </g>
+                                        <!-- Petal 3 -->
+                                        <g transform="rotate(90 160 160)">
+                                            <path class="petal-fill" d="M160,160 Q145,82 195,72 Q225,115 160,160 Z"
+                                                fill="#4ECDC4" opacity="0" />
+                                            <path class="draw-element" d="M160,160 Q145,82 195,72 Q225,115 160,160 Z"
+                                                fill="none" stroke="#2C3E50" stroke-width="6" />
+                                        </g>
+                                        <!-- Petal 4 -->
+                                        <g transform="rotate(135 160 160)">
+                                            <path class="petal-fill" d="M160,160 Q145,82 195,72 Q225,115 160,160 Z"
+                                                fill="#C76BFF" opacity="0" />
+                                            <path class="draw-element" d="M160,160 Q145,82 195,72 Q225,115 160,160 Z"
+                                                fill="none" stroke="#2C3E50" stroke-width="6" />
+                                        </g>
+                                        <!-- Petal 5 -->
+                                        <g transform="rotate(180 160 160)">
+                                            <path class="petal-fill" d="M160,160 Q145,82 195,72 Q225,115 160,160 Z"
+                                                fill="#FF9EBE" opacity="0" />
+                                            <path class="draw-element" d="M160,160 Q145,82 195,72 Q225,115 160,160 Z"
+                                                fill="none" stroke="#2C3E50" stroke-width="6" />
+                                        </g>
+                                        <!-- Petal 6 -->
+                                        <g transform="rotate(225 160 160)">
+                                            <path class="petal-fill" d="M160,160 Q145,82 195,72 Q225,115 160,160 Z"
+                                                fill="#FFDB5E" opacity="0" />
+                                            <path class="draw-element" d="M160,160 Q145,82 195,72 Q225,115 160,160 Z"
+                                                fill="none" stroke="#2C3E50" stroke-width="6" />
+                                        </g>
+                                        <!-- Petal 7 -->
+                                        <g transform="rotate(270 160 160)">
+                                            <path class="petal-fill" d="M160,160 Q145,82 195,72 Q225,115 160,160 Z"
+                                                fill="#4ECDC4" opacity="0" />
+                                            <path class="draw-element" d="M160,160 Q145,82 195,72 Q225,115 160,160 Z"
+                                                fill="none" stroke="#2C3E50" stroke-width="6" />
+                                        </g>
+                                        <!-- Petal 8 -->
+                                        <g transform="rotate(315 160 160)">
+                                            <path class="petal-fill" d="M160,160 Q145,82 195,72 Q225,115 160,160 Z"
+                                                fill="#C76BFF" opacity="0" />
+                                            <path class="draw-element" d="M160,160 Q145,82 195,72 Q225,115 160,160 Z"
+                                                fill="none" stroke="#2C3E50" stroke-width="6" />
+                                        </g>
+                                    </svg>
+                                    <div class="crayon" id="crayon1">🖍️</div>
+                                </div>
+                            </div>
+
+                            <!-- RIGHT PAGE - VOL 2 -->
+                            <div class="page page-right">
+                                <div class="page-content mt-5">
+                                    <div class="page-title">Vol. 2</div>
+                                    <svg id="mandala2" width="270" height="270" viewBox="0 0 320 320"
+                                        class="mandala-svg" xmlns="http://www.w3.org/2000/svg">
+                                        <!-- Concentric circles -->
+                                        <circle class="draw-element" cx="160" cy="160" r="145" fill="none"
+                                            stroke="#2C3E50" stroke-width="14" />
+                                        <circle class="draw-element" cx="160" cy="160" r="118" fill="none"
+                                            stroke="#2C3E50" stroke-width="9" />
+                                        <circle class="draw-element" cx="160" cy="160" r="88" fill="none"
+                                            stroke="#2C3E50" stroke-width="11" />
+                                        <circle class="draw-element" cx="160" cy="160" r="62" fill="none"
+                                            stroke="#2C3E50" stroke-width="6" />
+                                        <!-- Center -->
+                                        <circle cx="160" cy="160" r="19" fill="#FFDB5E" />
+
+                                        <!-- Radial lines (8) -->
+                                        <line class="draw-element" x1="160" y1="160" x2="160" y2="25" stroke="#2C3E50"
+                                            stroke-width="8" stroke-linecap="round" />
+                                        <line class="draw-element" x1="160" y1="160" x2="255" y2="65" stroke="#2C3E50"
+                                            stroke-width="8" stroke-linecap="round" />
+                                        <line class="draw-element" x1="160" y1="160" x2="275" y2="160" stroke="#2C3E50"
+                                            stroke-width="8" stroke-linecap="round" />
+                                        <line class="draw-element" x1="160" y1="160" x2="255" y2="255" stroke="#2C3E50"
+                                            stroke-width="8" stroke-linecap="round" />
+                                        <line class="draw-element" x1="160" y1="160" x2="160" y2="295" stroke="#2C3E50"
+                                            stroke-width="8" stroke-linecap="round" />
+                                        <line class="draw-element" x1="160" y1="160" x2="65" y2="255" stroke="#2C3E50"
+                                            stroke-width="8" stroke-linecap="round" />
+                                        <line class="draw-element" x1="160" y1="160" x2="45" y2="160" stroke="#2C3E50"
+                                            stroke-width="8" stroke-linecap="round" />
+                                        <line class="draw-element" x1="160" y1="160" x2="65" y2="65" stroke="#2C3E50"
+                                            stroke-width="8" stroke-linecap="round" />
+
+                                        <!-- Petals with different colors for Vol 2 -->
+                                        <g transform="rotate(0 160 160)">
+                                            <path class="petal-fill" d="M160,160 Q145,82 195,72 Q225,115 160,160 Z"
+                                                fill="#A1E8E4" opacity="0" />
+                                            <path class="draw-element" d="M160,160 Q145,82 195,72 Q225,115 160,160 Z"
+                                                fill="none" stroke="#2C3E50" stroke-width="6" />
+                                        </g>
+                                        <g transform="rotate(45 160 160)">
+                                            <path class="petal-fill" d="M160,160 Q145,82 195,72 Q225,115 160,160 Z"
+                                                fill="#FFDB5E" opacity="0" />
+                                            <path class="draw-element" d="M160,160 Q145,82 195,72 Q225,115 160,160 Z"
+                                                fill="none" stroke="#2C3E50" stroke-width="6" />
+                                        </g>
+                                        <g transform="rotate(90 160 160)">
+                                            <path class="petal-fill" d="M160,160 Q145,82 195,72 Q225,115 160,160 Z"
+                                                fill="#C76BFF" opacity="0" />
+                                            <path class="draw-element" d="M160,160 Q145,82 195,72 Q225,115 160,160 Z"
+                                                fill="none" stroke="#2C3E50" stroke-width="6" />
+                                        </g>
+                                        <g transform="rotate(135 160 160)">
+                                            <path class="petal-fill" d="M160,160 Q145,82 195,72 Q225,115 160,160 Z"
+                                                fill="#FF9EBE" opacity="0" />
+                                            <path class="draw-element" d="M160,160 Q145,82 195,72 Q225,115 160,160 Z"
+                                                fill="none" stroke="#2C3E50" stroke-width="6" />
+                                        </g>
+                                        <g transform="rotate(180 160 160)">
+                                            <path class="petal-fill" d="M160,160 Q145,82 195,72 Q225,115 160,160 Z"
+                                                fill="#A1E8E4" opacity="0" />
+                                            <path class="draw-element" d="M160,160 Q145,82 195,72 Q225,115 160,160 Z"
+                                                fill="none" stroke="#2C3E50" stroke-width="6" />
+                                        </g>
+                                        <g transform="rotate(225 160 160)">
+                                            <path class="petal-fill" d="M160,160 Q145,82 195,72 Q225,115 160,160 Z"
+                                                fill="#FFDB5E" opacity="0" />
+                                            <path class="draw-element" d="M160,160 Q145,82 195,72 Q225,115 160,160 Z"
+                                                fill="none" stroke="#2C3E50" stroke-width="6" />
+                                        </g>
+                                        <g transform="rotate(270 160 160)">
+                                            <path class="petal-fill" d="M160,160 Q145,82 195,72 Q225,115 160,160 Z"
+                                                fill="#C76BFF" opacity="0" />
+                                            <path class="draw-element" d="M160,160 Q145,82 195,72 Q225,115 160,160 Z"
+                                                fill="none" stroke="#2C3E50" stroke-width="6" />
+                                        </g>
+                                        <g transform="rotate(315 160 160)">
+                                            <path class="petal-fill" d="M160,160 Q145,82 195,72 Q225,115 160,160 Z"
+                                                fill="#FF9EBE" opacity="0" />
+                                            <path class="draw-element" d="M160,160 Q145,82 195,72 Q225,115 160,160 Z"
+                                                fill="none" stroke="#2C3E50" stroke-width="6" />
+                                        </g>
+                                    </svg>
+                                    <div class="crayon" id="crayon2">🖍️</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOKS SECTION -->
+    <section id="books" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Our Mandala Coloring Series</h2>
+
+            <div class="row g-5 justify-content-center">
+                <!-- Vol 1 -->
+                <div class="col-lg-5 col-md-6">
+                    <div class="product-card slide-left">
+                        <div class="card-cover" style="background-image: url('./assets/images/vol-1.jpeg')">
+                            <div class="vol-badge">Vol. 1</div>
+                        </div>
+                        <div class="card-body product-body">
+
+                            <h3 class="product-title">Mandala Magic</h3>
+
+                            <p class="product-meta">
+                                Ages 6–12 • 16 pages
+                            </p>
+
+                            <div class="price-row">
+                                <span class="price">₹199</span>
+                                <span class="old-price">₹299</span>
+                            </div>
+
+                            <button onclick="buyNow(1)" class="btn btn-buy">
+                                Buy Now 🛒
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Vol 2 -->
+                <div class="col-lg-5 col-md-6">
+                    <div class="product-card slide-left">
+                        <div class="card-cover" style="background-image: url('./assets/images/vol-1.jpeg')">
+                            <div class="vol-badge">Vol. 2</div>
+                        </div>
+                        <div class="card-body product-body">
+
+                            <h3 class="product-title">Enchanted Mandala</h3>
+
+                            <p class="product-meta">
+                                Ages 7–14 • 16 pages
+                            </p>
+
+                            <div class="price-row">
+                                <span class="price">₹199</span>
+                                <span class="old-price">₹299</span>
+                            </div>
+
+                            <button onclick="buyNow(1)" class="btn btn-buy">
+                                Buy Now 🛒
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHAT IS MANDALA ART? – Attractive & Magical Version -->
+    <section id="what-is-mandala" class="py-5 py-lg-6 bg-white">
+        <div class="container">
+            <div class="row align-items-center g-5 g-lg-6">
+                <!-- LEFT COLUMN: Explanation -->
+                <div class="col-lg-6">
+                    <div class="pe-lg-4">
+                        <div class="text-center mb-5 mb-md-6">
+                            <h2 class="section-title display-4 fw-extrabold mb-3"
+                                style="font-size: clamp(2.4rem, 6vw, 3.8rem);">
+                                What is <span style="color: var(--teal);">Mandala Art?</span><br>
+                            </h2>
+                            <p class="lead text-muted mx-auto" style="max-width: 720px; font-size: 1.55rem;">
+                                A Magical Circle of Patterns!
+                            </p>
+                        </div>
+
+
+
+                        <p class="lead fs-4 mb-4 text-muted" style="line-height: 1.6;">
+                            Mandala art is a <strong>beautiful circular design</strong> made of repeating patterns,
+                            shapes, flowers, and symbols — all perfectly balanced from the center outward.
+                        </p>
+
+
+                        <div class="benefits-row">
+
+                            <div class="benefit-square border 2 border-primary">
+                                <div class="benefit-icon">🧠</div>
+                                <p>Improves focus and patience</p>
+                            </div>
+
+                            <div class="benefit-square border 4 border-warning">
+                                <div class="benefit-icon">🌈</div>
+                                <p>Sparks creativity with every color choice</p>
+                            </div>
+
+                            <div class="benefit-square border 4 border-success">
+                                <div class="benefit-icon">😌</div>
+                                <p>Brings relaxation and calm feelings</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- RIGHT COLUMN: Images + Parent explanation reinforcement -->
+                <div class="col-lg-6 text-center">
+
+                    <!-- Mandala Carousel -->
+                    <div id="mandalaCarousel" class="carousel slide" data-bs-ride="carousel">
+
+                        <div class="carousel-inner">
+
+                            <!-- Slide 1 -->
+                            <div class="carousel-item active">
+                                <div class="mandala-frame mx-auto shadow-lg rounded-4 overflow-hidden"
+                                    style="max-width: 420px; background: white; border: 14px solid #fff8f0;">
+                                    <img src="./assets/images/mandala-1.jpg" class="img-fluid mandala-img w-100"
+                                        alt="Mandala Coloring Page">
+                                </div>
+                                <p class="mt-3 fw-medium text-muted">
+                                    A simple mandala ready for coloring
+                                </p>
+                            </div>
+
+                            <!-- Slide 2 -->
+                            <div class="carousel-item">
+                                <div class="mandala-frame mx-auto shadow-lg rounded-4 overflow-hidden"
+                                    style="max-width: 420px; background: white; border: 14px solid #fff8f0;">
+                                    <img src="./assets/images/mandala-2.png" class="img-fluid mandala-img w-100"
+                                        alt="Mandala Coloring Page 2">
+                                </div>
+                                <p class="mt-3 fw-medium text-muted">
+                                    Creative mandala design
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <!-- PREV ARROW -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#mandalaCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+
+                        <!-- NEXT ARROW -->
+                        <button class="carousel-control-next" type="button" data-bs-target="#mandalaCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Parent-friendly box -->
+            <div class="parent-note-box p-4 rounded-4 shadow-sm">
+
+                <div class="row align-items-center g-4">
+
+                    <!-- IMAGE -->
+                    <div class="col-md-4 text-center">
+                        <img src="./assets/images/parents.jpg" alt="Parent and Kid Coloring"
+                            class="img-fluid parent-img">
+                    </div>
+
+                    <!-- CONTENT -->
+                    <div class="col-md-8">
+                        <div class="text-center mb-5 mb-md-6">
+                            <h2 class="section-title display-4 fw-extrabold mb-3"
+                                style="font-size: clamp(2.4rem, 6vw, 3.8rem);">
+                                A Note For <span style="color: var(--teal);">Parents</span><br>
+                            </h2>
+                            <p class="lead text-muted mx-auto" style="max-width:720px; font-size:1.55rem;">
+                                Helping children grow calmer, more focused, and more creative — one mandala at a time.
+                            </p>
+                        </div>
+
+                        <p class="mb-0 text-muted fs-4 parent-text">
+                            Mandala coloring is more than fun — it's a gentle way to help children build
+                            concentration, steady hands, emotional calm, and creative confidence.
+                            Many parents notice their kids become more focused and relaxed after just a few sessions!
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+    <!-- WHY MANDALA COLORING IS GOOD FOR KIDS – Upgraded Attractive Version -->
+    <section id="kids-benefits" class="py-5 py-md-6 position-relative overflow-hidden">
+        <!-- Subtle paper texture + floating dots background -->
+        <div class="bg-decor position-absolute top-0 start-0 w-100 h-100"
+            style="z-index: 0; opacity: 0.07; pointer-events: none;">
+            <div
+                style="background: url('https://www.transparenttextures.com/patterns/subtle-white-feathers.png'); height: 100%;">
+            </div>
+        </div>
+
+        <div class="container position-relative" style="z-index: 2;">
+            <div class="text-center mb-5 mb-md-6">
+                <div class="d-inline-block px-4 py-2 rounded-pill mb-3"
+                    style="background: linear-gradient(45deg, #fff0f5, #f0fff8); font-size: 1.1rem; font-weight: 700; color: var(--pink); box-shadow: 0 6px 20px rgba(255,107,157,0.2);">
+                    Did you know? ✨
+                </div>
+                <h2 class="section-title display-4 fw-extrabold mb-3" style="font-size: clamp(2.4rem, 6vw, 3.8rem);">
+                    Why Kids <span style="color: var(--teal);">LOVE</span><br>
+                    Coloring Mandalas
+                </h2>
+                <p class="lead text-muted mx-auto" style="max-width: 720px; font-size: 1.55rem;">
+                    It's not just pretty pictures — it's super-powerful brain & heart magic!
+                </p>
+            </div>
+
+            <div class="row g-4 g-md-5 justify-content-center">
+                <!-- Benefit Card -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="benefit-card h-100">
+                        <div class="card-front">
+                            <div class="icon-circle" style="background: #e0f7fa;">
+                                <span class="benefit-emoji">🎯</span>
+                            </div>
+                            <h4 class="benefit-title">Super Focus Power</h4>
+                            <p class="benefit-text">Helps kids concentrate like little superheroes for longer!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="benefit-card h-100">
+                        <div class="card-front">
+                            <div class="icon-circle" style="background: #fff3e0;">
+                                <span class="benefit-emoji">🖐️✨</span>
+                            </div>
+                            <h4 class="benefit-title">Hand-Eye Magic</h4>
+                            <p class="benefit-text">Makes hands and eyes work together like best friends.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="benefit-card h-100">
+                        <div class="card-front">
+                            <div class="icon-circle" style="background: #f3e5f5;">
+                                <span class="benefit-emoji">😌🌙</span>
+                            </div>
+                            <h4 class="benefit-title">Calm & Happy Vibes</h4>
+                            <p class="benefit-text">Feels like a big warm hug when things feel stressful.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="benefit-card h-100">
+                        <div class="card-front">
+                            <div class="icon-circle" style="background: #e8f5e9;">
+                                <span class="benefit-emoji">🌈🧠</span>
+                            </div>
+                            <h4 class="benefit-title">Imagination Explosion</h4>
+                            <p class="benefit-text">Every color choice creates a completely unique world!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="benefit-card h-100">
+                        <div class="card-front">
+                            <div class="icon-circle" style="background: #fffde7;">
+                                <span class="benefit-emoji">🏆💖</span>
+                            </div>
+                            <h4 class="benefit-title">I Did It! Pride</h4>
+                            <p class="benefit-text">Finishing a mandala makes kids feel super proud.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="benefit-card h-100">
+                        <div class="card-front">
+                            <div class="icon-circle" style="background: #e3f2fd;">
+                                <span class="benefit-emoji">✏️⚡</span>
+                            </div>
+                            <h4 class="benefit-title">Tiny Muscle Superpowers</h4>
+                            <p class="benefit-text">Stronger fingers = better writing & drawing later!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fun footer decoration -->
+            <div class="text-center mt-5 pt-4">
+                <div class="d-inline-flex gap-4 gap-md-5 flex-wrap justify-content-center"
+                    style="font-size: 3.5rem; opacity: 0.9;">
+                    🖍️ &nbsp; 🌸 &nbsp; ⭐ &nbsp; 🦋 &nbsp;🍭
+                </div>
+                <p class="mt-4 fw-medium" style="color: var(--purple); font-size: 1.3rem;">
+                    Ready to unlock all these superpowers? 🎨
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ABOUT ARTORIA SECTION – Attractive, Playful & Premium Style -->
+    <section id="about" class="py-5 py-lg-6 position-relative overflow-hidden"
+        style="background: linear-gradient(135deg, #fff8f5 0%, #f0fff8 100%);">
+        <!-- Floating pastel shapes for magical feel -->
+        <div class="position-absolute top-0 start-0 w-100 h-100 pointer-events-none" style="z-index: 1; opacity: 0.12;">
+            <div class="float-shape"
+                style="width: 220px; height: 220px; top: 10%; left: 8%; background: radial-gradient(circle, #fff0f5, transparent); animation: floatGentle 24s infinite ease-in-out;">
+            </div>
+            <div class="float-shape"
+                style="width: 160px; height: 160px; bottom: 15%; right: 10%; background: radial-gradient(circle, #e0f7fa, transparent); animation: floatGentle 30s infinite ease-in-out -10s;">
+            </div>
+            <div class="float-shape"
+                style="width: 180px; height: 180px; top: 60%; left: 75%; background: radial-gradient(circle, #f0e8ff, transparent); animation: floatGentle 26s infinite ease-in-out -5s;">
+            </div>
+        </div>
+
+        <div class="container position-relative" style="z-index: 2;">
+            <div class="row align-items-center g-5 g-lg-6 flex-lg-row-reverse">
+
+
+                <!-- Left: Text Content -->
+                <div class="col-lg-6">
+                    <div class="ps-lg-4 text-center text-lg-start">
+                        <div class="d-inline-block px-4 py-2 rounded-pill mb-4" style="background: linear-gradient(45deg, #fff0f5, #f0fff8); 
+                                font-weight: 700; color: var(--pink); 
+                                box-shadow: 0 6px 20px rgba(255,107,157,0.18);">
+                            🌸 About Artoria 🌸
+                        </div>
+
+                        <div class="text-center mb-5 mb-md-6">
+                            <h2 class="section-title display-4 fw-extrabold mb-3"
+                                style="font-size: clamp(2.4rem, 6vw, 3.8rem);">
+                                Welcome To <span style="color: var(--teal);">ARTORIA</span><br>
+                            </h2>
+                            <p class="lead text-muted mx-auto" style="max-width: 720px; font-size: 1.55rem;">
+                                A Magical Circle of Patterns!
+                            </p>
+                        </div>
+
+                        <p class="lead fs-4 mb-4" style="color: #444; line-height: 1.6;">
+                            Artoria Publication is a joyful imprint of <strong>Mugin Technologies</strong>, lovingly
+                            created to bring <strong>creative learning books</strong> into children's lives.
+                        </p>
+
+                        <p class="fs-5 mb-5" style="color: #555; line-height: 1.7;">
+                            We believe every child is an artist waiting to bloom. Our mandala coloring books blend pure
+                            fun with real skill-building — helping little hands and minds grow through patterns, colors,
+                            and imagination.
+                        </p>
+
+                        <div class="mission-highlights row g-4 mb-5">
+                            <div class="col-md-6">
+                                <div class="highlight-pill p-4 rounded-4 text-center"
+                                    style="background: rgba(255,107,157,0.08);">
+                                    <span style="font-size: 3rem; display: block; margin-bottom: 12px;">🎨</span>
+                                    <h5 class="fw-bold mb-2" style="color: var(--pink);">Fun First</h5>
+                                    <p class="small text-muted mb-0">Hours of happy coloring joy</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="highlight-pill p-4 rounded-4 text-center"
+                                    style="background: rgba(78,205,196,0.08);">
+                                    <span style="font-size: 3rem; display: block; margin-bottom: 12px;">🧠</span>
+                                    <h5 class="fw-bold mb-2" style="color: var(--teal);">Smart Growth</h5>
+                                    <p class="small text-muted mb-0">Focus, patience & creativity</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Visual Showcase (Images) -->
+                <div class="col-lg-6 text-center">
+                    <div class="about-visuals">
+
+                        <!-- Main book cover showcase -->
+                        <div class="main-book-frame mx-auto mb-4 shadow-xl rounded-4 overflow-hidden"
+                            style="max-width: 420px;">
+
+                            <img src="./assets/images/about.png" alt="Artoria Mandala Book" class="img-fluid w-100">
+                            <a href="#books" class="btn btn-lg rounded-pill px-5 fw-bold"
+                                style="background: linear-gradient(45deg, var(--pink), var(--teal)); color: white; box-shadow: 0 12px 30px rgba(255,107,157,0.3);">
+                                Explore Our Books 🖍️
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6 + 9: Social + Contact – Combined Bottom Section -->
+    <section id="connect" class="py-5 py-lg-6 position-relative overflow-hidden" style="background:  bg-decor;">
+        <!-- Soft floating background shapes -->
+        <div class="position-absolute top-0 start-0 w-100 h-100 pointer-events-none" style="z-index: 1; opacity: 0.12;">
+            <div class="float-shape"
+                style="width: 180px; height: 180px; top: 15%; left: 10%; background: radial-gradient(circle, #fff0f5, transparent); animation: float 22s infinite ease-in-out;">
+            </div>
+            <div class="float-shape"
+                style="width: 140px; height: 140px; bottom: 20%; right: 12%; background:  bg-decor; animation: float 28s infinite ease-in-out -8s;">
+            </div>
+        </div>
+
+        <div class="container position-relative" style="z-index: 2;">
+            <div class="row align-items-center g-5 g-lg-6">
+                <!-- LEFT: Join the Artoria Community -->
+                <div class="col-lg-6">
+                    <div class="text-center text-lg-start pe-lg-5">
+                        <h2 class="display-5 fw-extrabold mb-4" style="background: linear-gradient(90deg, var(--pink), var(--teal), var(--purple));
+                               -webkit-background-clip: text;
+                               -webkit-text-fill-color: transparent;">
+                            Join the Artoria Community
+                        </h2>
+
+                        <p class="lead text-muted mb-5" style="font-size: 1.3rem;">
+                            Follow us for daily mandala inspiration, coloring tips, free printables, and
+                            behind-the-scenes magic!
+                        </p>
+
+                        <div
+                            class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-4 gap-md-5 social-icons">
+                            <!-- Instagram -->
+                            <a href="https://instagram.com/houseofartoria" target="_blank"
+                                class="social-link text-decoration-none" aria-label="Instagram">
+                                <div class="social-circle"
+                                    style="background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);">
+                                    <i class="bi bi-instagram"></i>
+                                </div>
+                                <span class="d-block mt-2 fw-medium small">@houseofartoria</span>
+                            </a>
+
+                            <!-- Facebook -->
+                            <a href="https://facebook.com/houseofartoria" target="_blank"
+                                class="social-link text-decoration-none" aria-label="Facebook">
+                                <div class="social-circle" style="background: #1877f2;">
+                                    <i class="bi bi-facebook"></i>
+                                </div>
+                                <span class="d-block mt-2 fw-medium small">houseofartoria</span>
+                            </a>
+
+                            <!-- YouTube -->
+                            <a href="https://www.youtube.com/@houseofartoria" target="_blank"
+                                class="social-link text-decoration-none" aria-label="YouTube">
+                                <div class="social-circle" style="background: #ff0000;">
+                                    <i class="bi bi-youtube"></i>
+                                </div>
+                                <span class="d-block mt-2 fw-medium small">House of Artoria</span>
+                            </a>
+
+                            <!-- Website -->
+                            <a href="https://www.artoria.co.in" target="_blank" class="social-link text-decoration-none"
+                                aria-label="Website">
+                                <div class="social-circle"
+                                    style="background: linear-gradient(45deg, var(--pink), var(--teal));">
+                                    <i class="bi bi-globe"></i>
+                                </div>
+                                <span class="d-block mt-2 fw-medium small">artoria.co.in</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT: Contact Form -->
+                <div class="col-lg-6">
+                    <div class="contact-card bg-white rounded-4 shadow-lg p-4 p-lg-5"
+                        style="border: 2px solid rgba(78,205,196,0.15); backdrop-filter: blur(8px);">
+                        <h3 class="fw-bold mb-4 text-center" style="color: var(--purple);">
+                            Contact Us 💌
+                        </h3>
+
+                        <form id="contactForm" class="needs-validation" novalidate>
+                            <div class="mb-4">
+                                <label for="name" class="form-label fw-medium">Name <span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control form-control-lg rounded-pill" id="name" required
+                                    placeholder="Your sweet name">
+                                <div class="invalid-feedback">Please enter your name.</div>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="phone" class="form-label fw-medium">Phone Number <span
+                                        class="text-danger">*</span></label>
+                                <input type="tel" class="form-control form-control-lg rounded-pill" id="phone" required
+                                    placeholder="+91 98765 43210" pattern="[0-9]{10}">
+                                <div class="invalid-feedback">Please enter a valid 10-digit phone number.</div>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="email" class="form-label fw-medium">Email (optional)</label>
+                                <input type="email" class="form-control form-control-lg rounded-pill" id="email"
+                                    placeholder="your@email.com">
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="message" class="form-label fw-medium">Message <span
+                                        class="text-danger">*</span></label>
+                                <textarea class="form-control rounded-4" id="message" rows="4" required
+                                    placeholder="Tell us what you're dreaming about... 🌸"></textarea>
+                                <div class="invalid-feedback">Please write a few words.</div>
+                            </div>
+
+                            <button type="submit" class="btn btn-lg w-100 rounded-pill fw-bold"
+                                style="background: linear-gradient(45deg, var(--pink), var(--teal)); color: white; box-shadow: 0 10px 30px rgba(255,107,157,0.3);">
+                                Send Message 🖌️
+                            </button>
+                        </form>
+
+                        <!-- Success Message -->
+                        <div id="successMessage" class="text-center mt-4 d-none">
+                            <div class="success-icon mb-3" style="font-size: 4rem;">🎉</div>
+                            <h4 class="fw-bold mb-2" style="color: var(--teal);">Thank you!</h4>
+                            <p class="text-muted">We will contact you soon with lots of coloring love 💕</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===============================
+        🌸 ARTORIA FOOTER
+================================ -->
+    <footer class="artoria-footer position-relative overflow-hidden">
+
+        <!-- Top Wave Shape -->
+        <div class="footer-wave"></div>
+
+        <div class="container py-5">
+            <div class="row text-center text-lg-start align-items-start">
+
+                <!-- BRAND -->
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-logo-wrap">
+                        <img src="./assets/images/logo.png" alt="Artoria Logo" class="footer-logo-img">
+                    </div>
+
+                    <p class="footer-text">
+                        Spark creativity, build focus, and bring joyful coloring moments
+                        to kids through magical mandala books.
+                    </p>
+                </div>
+
+                <!-- QUICK LINKS -->
+                <div class="col-lg-4 mb-4">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#books">Books</a></li>
+                        <li><a href="#kids-benefits">Benefits</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+
+                <!-- SOCIAL -->
+                <div class="col-lg-4 mb-4">
+                    <h5 class="footer-title">Follow Artoria</h5>
+                    <div class="footer-social d-flex justify-content-center justify-content-lg-end gap-3 mt-3">
+
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-whatsapp"></i></a>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom mt-4 pt-3 border-top">
+                <div class="row align-items-center">
+
+                    <!-- LEFT -->
+                    <div class="col-md-4 text-center text-md-start">
+                        © Artoria Publication
+                    </div>
+
+                    <!-- CENTER -->
+                    <div class="col-md-4 text-center">
+                        Designed with ❤️ for creative kids.
+                    </div>
+
+                    <!-- RIGHT -->
+                    <div class="col-md-4 text-center text-md-end">
+                        Imprint of Mugin Technologies
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+    <!-- BUY MODAL -->
+    <!-- <div class="modal fade" id="buyModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg" style="border-radius: 30px;">
+                <div class="modal-body text-center p-5">
+                    <div style="font-size: 4.5rem; margin-bottom: 20px;">🎉</div>
+                    <h3 class="mb-3">Yay! Order placed!</h3>
+                    <p class="mb-4 text-muted">Your mandala book will be on its way soon.<br>Thank you for supporting
+                        young artists!</p>
+                    <button type="button" class="btn btn-lg btn-dark px-5" data-bs-dismiss="modal">Awesome!</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
